@@ -1,249 +1,842 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Land Registry</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Toggle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-Light bg-Light shadow-lg p-3 mb-5 bg-body ">
-    <div class="container-fluid">
-        <a class="navbar-brand brscvi" href="#">
-            <i class="fa-solid fa-building"></i> Land Registry
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active brscvi" href="#">
-                        <i class="fa-solid fa-house"></i> Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link brscvi1" href="#">
-                        <i class="fa-solid fa-building-columns"></i> Register Land
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link brscvi1" href="#">
-                        <i class="fa-solid fa-right-left"></i> Transfer Land
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link brscvi1" href="#">
-                        <i class="fa-solid fa-file-lines"></i> View Records
-                    </a>
-                </li>
-            </ul>
+    <div id="root">
+        <div class="background-bubbles">
+            <div class="bubble" style="left: 7.61982%; top: 91.4572%; width: 44.3936px; height: 7.28238px; animation-delay: 9.34639s;"></div>
+            <div class="bubble" style="left: 81.0041%; top: 72.9437%; width: 81.459px; height: 44.4959px; animation-delay: 3.74449s;"></div>
+            <div class="bubble" style="left: 75.6808%; top: 7.62464%; width: 18.914px; height: 91.8345px; animation-delay: 2.10634s;"></div>
+            <div class="bubble" style="left: 48.0161%; top: 78.8303%; width: 80.1145px; height: 24.0891px; animation-delay: 8.0167s;"></div>
+            <div class="bubble" style="left: 94.6817%; top: 14.2602%; width: 99.8061px; height: 31.9822px; animation-delay: 2.37363s;"></div>
+            <div class="bubble" style="left: 60.1133%; top: 70.6344%; width: 52.7191px; height: 46.687px; animation-delay: 0.288905s;"></div>
+            <div class="bubble" style="left: 76.8636%; top: 74.4449%; width: 4.22634px; height: 32.5666px; animation-delay: 3.31199s;"></div>
+            <div class="bubble" style="left: 75.7617%; top: 2.74116%; width: 55.4424px; height: 19.7148px; animation-delay: 2.9584s;"></div>
+            <div class="bubble" style="left: 41.7492%; top: 2.87242%; width: 82.9009px; height: 61.9409px; animation-delay: 8.14512s;"></div>
+            <div class="bubble" style="left: 40.3207%; top: 60.9555%; width: 55.1531px; height: 76.8724px; animation-delay: 4.47686s;"></div>
+            <div class="bubble" style="left: 94.4171%; top: 42.1895%; width: 30.4209px; height: 14.611px; animation-delay: 1.65992s;"></div>
+            <div class="bubble" style="left: 52.7627%; top: 79.9082%; width: 88.5273px; height: 2.80874px; animation-delay: 1.47899s;"></div>
+            <div class="bubble" style="left: 77.1398%; top: 91.9505%; width: 65.7002px; height: 64.8706px; animation-delay: 6.43408s;"></div>
+            <div class="bubble" style="left: 63.1803%; top: 38.4933%; width: 80.952px; height: 47.0493px; animation-delay: 7.1473s;"></div>
+            <div class="bubble" style="left: 52.3896%; top: 1.80842%; width: 42.2559px; height: 12.9546px; animation-delay: 0.71668s;"></div>
+            <div class="bubble" style="left: 55.5351%; top: 13.2941%; width: 49.0888px; height: 10.6576px; animation-delay: 2.14797s;"></div>
+            <div class="bubble" style="left: 77.9432%; top: 28.3264%; width: 67.5186px; height: 38.9072px; animation-delay: 1.90628s;"></div>
+            <div class="bubble" style="left: 60.3866%; top: 59.553%; width: 66.7149px; height: 77.4635px; animation-delay: 2.49014s;"></div>
+            <div class="bubble" style="left: 95.4853%; top: 21.6678%; width: 31.5046px; height: 87.6403px; animation-delay: 8.59344s;"></div>
+            <div class="bubble" style="left: 11.911%; top: 96.4872%; width: 66.3508px; height: 42.3157px; animation-delay: 2.45741s;"></div>
         </div>
     </div>
-</nav>
-<div class="css-12sovva">
-<!-- Hero Section -->
-<section class="hero-section">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Left Content -->
-            <div class="col-lg-7">
-                <div class="hero-content">
-                    <h1 class="display-4 fw-bold">Revolutionizing Land Registry</h1>
-                    <p class="lead">
-                        Secure, transparent, and efficient property transactions powered by blockchain technology.
-                        Experience the future of real estate management.
-                    </p>
-                    <div class="mt-4">
-                        <a href="#" class="btn btn-custom btn-primary-custom me-3">
-                            <i class="fas fa-plus"></i> Register Property
-                        </a>
-                        <a href="#" class="btn btn-custom btn-outline-custom">
-                            <i class="fas fa-search"></i> Search Properties
-                        </a>
-                    </div>
 
-                    <!-- Feature Badges -->
-                    <div class="mt-4 d-flex gap-3">
-                        <span class="feature-badge">
-                            <i class="fas fa-shield-alt"></i> Blockchain Secured
-                        </span>
-                        <span class="feature-badge">
-                            <i class="fas fa-check-circle"></i> Instant Verification
-                        </span>
-                        <span class="feature-badge">
-                            <i class="fas fa-file-signature"></i> Smart Contracts
-                        </span>
+<header class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 7V3H2v18h20V7zM6 19H4v-2h2zm0-4H4v-2h2zm0-4H4V9h2zm0-4H4V5h2zm4 12H8v-2h2zm0-4H8v-2h2zm0-4H8V9h2zm0-4H8V5h2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8zm-2-8h-2v2h2zm0 4h-2v2h2z"></path>
+                </svg>
+                <h5 class="mb-0 registry-text">Land Registry</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-button" href="/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-button" href="/register">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M4 10h3v7H4zm6.5 0h3v7h-3zM2 19h20v3H2zm15-9h3v7h-3zm-5-9L2 6v2h20V6z"></path>
+                            </svg>
+                            Register Land
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-button" href="/transfer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.99 11 3 15l3.99 4v-3H14v-2H6.99zM21 9l-3.99-4v3H10v2h7.01v3z"></path>
+                            </svg>
+                            Transfer Land
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-button" href="/records">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"></path>
+                            </svg>
+                            View Records
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="bubble bubble-1"></div>
+            <div class="bubble bubble-2"></div>
+            <div class="bubble bubble-3"></div>
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="hero-title">Revolutionizing Land Registry</h1>
+                    <p class="hero-subtitle">Secure, transparent, and efficient property transactions powered by blockchain technology. Experience the future of real estate management.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-custom btn-primary-custom">
+                            <i class="fas fa-plus me-2"></i>Register Property
+                        </button>
+                        <button class="btn btn-custom btn-search-custom">
+                            <i class="fas fa-search me-2"></i>Search Properties
+                        </button>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="feature-smart">
+                                <i class="fas fa-shield-alt smart-icon fa-3x"></i>
+                                <p class="smart-text">Blockchain Secured</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-smart">
+                                <i class="fas fa-bolt smart-icon fa-3x"></i>
+                                <p class="smart-text">Instant Verification</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-smart">
+                                <i class="fas fa-file-contract smart-icon fa-3x"></i>
+                                <p class="smart-text">Smart Contracts</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Right Image -->
-            <div class="col-lg-5 text-center">
-                <img src="img/hero-illustration.svg" alt="Illustration" class="img-fluid">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- Technologies Section -->
-<section class="tech-section">
-    <div class="container">
-         <h3 class="cutting-edge">Cutting-Edge Technologies Powering Land<br> Registry</h3>
-        
-        <div class="row align-items-center mt-5">
-            <!-- Left Column: Image Carousel -->
-            <div class="col-lg-6">
-                <div class="carousel-container" onclick="rotateCarousel()">
-    <div class="carousel" id="carousel">
-        <div class="carousel-item" style="transform: rotateY(0deg) translateZ(250px);">
-            <i class="fas fa-shield-alt"></i>
-            <h4>Smart Contracts</h4>
-            <p>Automated and secure property transfers using blockchain technology.</p>
-        </div>
-        <div class="carousel-item" style="transform: rotateY(120deg) translateZ(250px);">
-            <i class="fas fa-bolt"></i>
-            <h4>Quick Processing</h4>
-            <p>Fast and efficient property registration and verification.</p>
-        </div>
-        <div class="carousel-item" style="transform: rotateY(240deg) translateZ(250px);">
-            <i class="fas fa-file-alt"></i>
-            <h4>Digital Records</h4>
-            <p>Immutable and transparent land ownership records.</p>
-        </div>
-    </div>
-</div>
-<div class="badge-container">
-        <div class="badge-custom"><i class="bi bi-eye"></i> Transparent</div>
-        <div class="badge-custom"><i class="bi bi-clock"></i> 24/7 Access</div>
-        <div class="badge-custom"><i class="bi bi-building"></i> Cost Effective</div>
-        <div class="badge-custom"><i class="bi bi-shield"></i> Immutable Records</div>
-        <div class="badge-custom"><i class="bi bi-check-circle"></i> Reduced Fraud</div>
-    </div>
-
-
-            </div>
-
-            <!-- Right Column: Icons with Text -->
-            <div class="col-lg-6 text-start">
-                <div>
-                  <h4 class="text-primary">Transforming Land Management through Innovation</h4> 
-                  <p>We leverage state-of-the-art blockchain and web technologies to create a revolutionary land registry platform. Our solution goes beyond traditional record-keeping, offering a comprehensive ecosystem that ensures security, transparency, and efficiency for all stakeholders.</p> 
+                <div class="col-md-5">
+                    <img src="img/hero-illustration.svg" alt="Land Registry Illustration" class="hero-illustration">
                 </div>
-                <h5 class="text-primary mb-4">Innovative Technologies:</h5>
-        
-        <div class="row mb-4">
-            <div class="col-1 text-center">
-                <i class="fas fa-shield-alt tech-icon"></i>
-            </div>
-            <div class="col-11">
-                <h5 class="fw-bold">Advanced Blockchain Security</h5>
-                <p>Utilizing decentralized ledger technology to create immutable, tamper-proof land records with end-to-end encryption.</p>
             </div>
         </div>
-        
-        <div class="row mb-4">
-            <div class="col-1 text-center">
-                <i class="fa-solid fa-gauge-high tech-icon"></i>
-            </div>
-            <div class="col-11">
-                <h5 class="fw-bold">High-Performance Architecture</h5>
-                <p>Optimized transaction processing and smart contract execution ensure quick response times and efficient handling of property transfers and registrations.</p>
-            </div>
-        </div>
-        
-        <div class="row mb-4">
-            <div class="col-1 text-center">
-                 <i class="fas fa-file-signature tech-icon"></i>
-            </div>
-            <div class="col-11">
-                <h5 class="fw-bold">Smart Contract Integration</h5>
-                <p>Automated verification processes and self-executing contracts eliminate intermediaries and reduce processing time while maintaining complete transparency and trust.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Government Regulator -->
-<section>
-<div class="container">
-        <h2 class="mb-4 text-primary text-center">Choose Your Role</h2>
+    <div class="container my-5">
+        <h3 class="gradient-text display-4 mb-4">Cutting-Edge Technologies Powering Land Registry</h3>
         <div class="row">
-            <!-- Roles List -->
-            <div class="col-md-3">
-                <div class="list-group role-list">
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fas fa-home me-2"></i> Land Owner
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action active">
-                        <i class="fas fa-landmark me-2"></i> Government Regulator
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fas fa-dollar-sign me-2"></i> Real Estate Investor
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fas fa-map-marker-alt me-2"></i> Land Surveyor
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fas fa-building me-2"></i> Real Estate Agent
-                    </a>
+            <div class="col-md-6">
+                <div class="card-3d" id="carousel">
+                    <div class="card" id="card1">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h6 class="card-title">Smart Contracts</h6>
+                        <p class="card-text">Automated and secure property transfers using blockchain technology</p>
+                    </div>
+                    <div class="card" id="card2">
+                        <i class="fas fa-user-check feature-icon"></i>
+                        <h6 class="card-title">Digital Records</h6>
+                        <p class="card-text">Immutable and transparent land ownership records</p>
+                    </div>
+                    <div class="card" id="card3">
+                        <i class="fas fa-bolt feature-icon"></i>
+                        <h6 class="card-title">Quick Processing</h6>
+                        <p class="card-text">Fast and efficient property registration and verification</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap gap-2 mt-4">
+                    <button class="btn btn-outline-custom">
+                        <i class="fas fa-eye me-2"></i>Transparent
+                    </button>
+                    <button class="btn btn-outline-custom">
+                        <i class="fas fa-clock me-2"></i>24/7 Access
+                    </button>
+                    <button class="btn btn-outline-custom">
+                        <i class="fas fa-building me-2"></i>Cost Effective
+                    </button>
+                    <button class="btn btn-outline-custom">
+                        <i class="fas fa-shield-alt me-2"></i>Immutable Records
+                    </button>
+                    <button class="btn btn-outline-custom">
+                        <i class="fas fa-user-check me-2"></i>Reduced Fraud
+                    </button>
                 </div>
             </div>
-
-            <!-- Role Details -->
-            <div class="col-md-9">
-                <div class="card role-card p-4">
-                    <h3 class="text-success"><i class="fas fa-landmark me-2"></i> Government Regulator</h3>
-                    <p>As a government regulator, you oversee land transactions, ensure legal compliance, and maintain the integrity of property records.</p>
-
-                    <h5 class="mt-4"><i class="fas fa-shield-alt text-success me-2"></i> Permissions</h5>
-                    <div class="mb-3">
-                        <span class="badge badge-outline rounded-pill me-2">Transaction Monitoring</span>
-                        <span class="badge badge-outline rounded-pill me-2">Fraud Prevention</span>
-                        <span class="badge badge-outline rounded-pill me-2">Comprehensive Audit Trails</span>
-                        <span class="badge badge-outline rounded-pill me-2">Regulatory Oversight</span>
+            <div class="col-md-6">
+                <h5 class="h4 mb-4">Transforming Land Management through Innovation</h5>
+                <p class="lead mb-4">We leverage state-of-the-art blockchain and web technologies to create a revolutionary land registry platform. Our solution goes beyond traditional record-keeping, offering a comprehensive ecosystem that ensures security, transparency, and efficiency for all stakeholders.</p>
+                <h6 class="h5 mb-3">Innovative Technologies:</h6>
+                <div class="row">
+                    <div class="col-md-12 mb-4" id="feature1">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-shield-alt feature-icon me-4"></i>
+                            <div>
+                                <h6 class="h6 mb-2">Advanced Blockchain Security</h6>
+                                <p class="mb-0">Utilizing decentralized ledger technology to create immutable, tamper-proof land records with end-to-end encryption.</p>
+                            </div>
+                        </div>
                     </div>
-
-                    <h5 class="mt-4"><i class="fas fa-project-diagram text-success me-2"></i> Workflow</h5>
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item"><i class="fas fa-check-circle text-success me-2"></i> Verify Records</li>
-                        <li class="list-group-item"><i class="fas fa-tasks text-success me-2"></i> Compliance Check</li>
-                        <li class="list-group-item"><i class="fas fa-map-signs text-success me-2"></i> Land Use Regulation</li>
-                    </ul>
-
-                    <h5 class="mt-4"><i class="fas fa-tasks text-success me-2"></i> Responsibilities</h5>
-                    <p>As a Government Regulator, you play a crucial role in the blockchain land registry ecosystem. Your actions are recorded transparently on the blockchain, ensuring security, trust, and immutability of land-related transactions.</p>
-
-                    <button class="btn btn-success w-100 mt-3">Select Government Regulator Role</button>
+                    <div class="col-md-12 mb-4" id="feature2">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-bolt feature-icon me-4"></i>
+                            <div>
+                                <h6 class="h6 mb-2">High-Performance Architecture</h6>
+                                <p class="mb-0">Optimized transaction processing and smart contract execution ensure quick response times and efficient handling of property transfers and registrations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-4" id="feature3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-check-circle feature-icon me-4"></i>
+                            <div>
+                                <h6 class="h6 mb-2">Smart Contract Integration</h6>
+                                <p class="mb-0">Automated verification processes and self-executing contracts eliminate intermediaries and reduce processing time while maintaining complete transparency and trust.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+<!-- Choose Your Role -->
 
+<div class="container my-5">
+        <h3 class="text-center display-4 fw-bold gradient-text mb-4">Choose Your Role</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <span class="text-uppercase text-muted small">ROLES</span>
+                        <div class="role-card active">
+                            <i class="fas fa-home role-icon"></i>
+                            <p class="role-name">Land Owner</p>
+                        </div>
+                        <div class="role-card">
+                            <i class="fas fa-building role-icon"></i>
+                            <p class="role-name">Government Regulator</p>
+                        </div>
+                        <div class="role-card">
+                            <i class="fas fa-dollar-sign role-icon"></i>
+                            <p class="role-name">Real Estate Investor</p>
+                        </div>
+                        <div class="role-card">
+                            <i class="fas fa-map role-icon"></i>
+                            <p class="role-name">Land Surveyor</p>
+                        </div>
+                        <div class="role-card">
+                            <i class="fas fa-briefcase role-icon"></i>
+                            <p class="role-name">Real Estate Agent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-home me-3 fs-4"></i>
+                            <h4 class="mb-0">Land Owner</h4>
+                        </div>
+                        <p class="text-muted mb-4">As a land owner, you have complete control over your property records, ensuring transparency and security through blockchain technology.</p>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-shield-alt me-2"></i>Permissions
+                                </h6>
+                                <div class="d-flex flex-wrap">
+                                    <span class="chip">Property Registration</span>
+                                    <span class="chip">Ownership Verification</span>
+                                    <span class="chip">Secure Transfer Mechanism</span>
+                                    <span class="chip">Transparent Ownership Records</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-project-diagram me-2"></i>Workflow
+                                </h6>
+                                <div class="accordion" id="workflowAccordion">
+                                    <!-- Register Property -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <i class="fas fa-file-alt me-2"></i>Register Property
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Register your property on the blockchain.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-user me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the first step in registering a property?</p>
+                                                        <p class="small text-muted">The first step is to create a digital identity and connect your wallet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I create a digital identity?</p>
+                                                        <p class="small text-muted">You can create a digital identity by providing your personal details and verifying your identity through our platform.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Verify Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="fas fa-check-circle me-2"></i>Verify Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Verify your ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-gavel me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I verify my ownership of the property?</p>
+                                                        <p class="small text-muted">You can verify your ownership by providing proof of ownership documents and undergoing a verification process.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-file-alt me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What documents do I need to provide?</p>
+                                                        <p class="small text-muted">You will need to provide proof of ownership documents such as a deed or title.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Transfer Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="fas fa-exchange-alt me-2"></i>Transfer Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Transfer ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-arrow-right me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I transfer ownership of the property?</p>
+                                                        <p class="small text-muted">You can transfer ownership by creating a new transaction and verifying the transfer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2"></i>
+                                                    <div>
+<p class="small mb-0">What is the verification process?</p>
+<p class="small text-muted">The verification process involves confirming the transfer details and verifying the new owner's identity.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <h6 class="d-flex align-items-center mb-3">
+        <i class="fas fa-shield-alt me-2"></i>Responsibilities
+        </h6>
+        <p class="text-muted mb-4">As a Land Owner, you play a crucial role in the blockchain land registry ecosystem. Your actions are recorded transparently on the blockchain, ensuring security, trust, and immutability of land-related transactions.</p>
+        <button class="btn btn-primary w-100">Select Land Owner Role</button>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
 
+    <!-- The transparent and immutable -->
+    <div class="container py-5">
+        <div class="container py-4">
+            <h3 class="text-center display-4 fw-bold gradient-text mb-5">Trusted by Industry Professionals</h3>
+            <div class="d-flex flex-column align-items-center">
+                <!-- Avatar Grid -->
+                <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+                    <img src="img/dow-1.jpeg" class="avatar" alt="Garvit">
+                    <img src="img/dow-2.jpeg" class="avatar" alt="Shashwat">
+                    <img src="img/dow-1.jpeg" class="avatar" alt="Shashidhar">
+                    <img src="img/dow-2.jpeg" class="avatar" alt="Rohan">
+                    <img src="img/dow-1.jpeg" class="avatar" alt="Riya">
+                    <img src="img/dow-2.jpeg" class="avatar" alt="Uday">
+                    <img src="img/dow-1.jpeg" class="avatar" alt="Alwaz">
+                    <img src="img/dow-2.jpeg" class="avatar" alt="Chinmay">
+                </div>
+
+                <!-- Testimonial Card -->
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon mb-4"></i>
+                    <h6 class="testimonial-text fw-medium">
+                        "The transparent and immutable record-keeping is crucial for sustainable urban development. This platform provides the trust and accountability we need."
+                    </h6>
+                    <div class="mt-4">
+                        <h6 class="fw-bold text-primary">Chinmay Bhoyar</h6>
+                        <p class="text-muted mb-0">Sustainable Development Specialist, Green Urban Planning</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Our Services -->
+<div class="gradient-bg">
+        <div class="container">
+            <h3 class="text-center display-4 fw-semibold mb-5">Our Services</h3>
+            <div class="row g-4">
+                <!-- Register Land Service -->
+                <div class="col-12">
+                    <div class="service-card">
+                        <i class="fas fa-plus service-icon"></i>
+                        <div class="flex-grow-1">
+                            <h6 class="service-title">Register Land</h6>
+                            <p class="service-description">Securely register your land property on the blockchain with immutable records and instant verification.</p>
+                        </div>
+                        <i class="fas fa-arrow-right service-arrow"></i>
+                    </div>
+                </div>
+
+                <!-- Transfer Ownership Service -->
+                <div class="col-12">
+                    <div class="service-card">
+                        <i class="fas fa-exchange-alt service-icon"></i>
+                        <div class="flex-grow-1">
+                            <h6 class="service-title">Transfer Ownership</h6>
+                            <p class="service-description">Transfer land ownership seamlessly using smart contracts with complete transparency and security.</p>
+                        </div>
+                        <i class="fas fa-arrow-right service-arrow"></i>
+                    </div>
+                </div>
+
+                <!-- View Records Service -->
+                <div class="col-12">
+                    <div class="service-card">
+                        <i class="fas fa-search service-icon"></i>
+                        <div class="flex-grow-1">
+                            <h6 class="service-title">View Records</h6>
+                            <p class="service-description">Access and verify land records instantly with our blockchain-powered transparent ledger system.</p>
+                        </div>
+                        <i class="fas fa-arrow-right service-arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Frequently Asked Questions -->
+<div class="dqpbi8">
+    <div class="asked-fre"></div>
+    <div class="faq-section">
+        <h3 class="faq-title">Frequently Asked Questions</h3>
+
+        <!-- Search Box -->
+        <div class="input-group search-box">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search FAQs...">
+        </div>
+
+        <!-- FAQ Grid -->
+        <div class="row g-4">
+            <!-- FAQ Card 1 -->
+            <div class="col-md-6">
+                <div class="faq-card">
+                    <h5>Understanding Blockchain Land Registry</h5>
+                    <p>Foundations of Modern Property Management</p>
+                    <div class="accordion" id="accordion1">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is blockchain technology in land registry?
+                                   
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Blockchain is a decentralized, digital ledger that records property ownership transactions securely and transparently. Each transaction is cryptographically sealed and cannot be altered, providing an immutable record of property ownership.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How does blockchain transform traditional land registry?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Unlike traditional paper-based systems, blockchain creates a transparent, tamper-proof digital record. It eliminates intermediaries, reduces fraud, and provides instant, verifiable property ownership information.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What makes blockchain more secure than traditional records?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Unlike centralized systems, blockchain distributes data across multiple nodes, eliminating single points of failure. Cryptographic techniques and consensus mechanisms ensure that no single entity can modify the records without network-wide verification.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Card 2 -->
+            <div class="col-md-6">
+                <div class="faq-card">
+                    <h5>Property Registration Process</h5>
+                    <p>Your Journey from Application to Ownership</p>
+                    <div class="accordion" id="accordion2">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What documents are required for property registration?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    Typically, you'll need: proof of identity, property deed, recent tax receipts, land survey documents, proof of address, and any previous ownership transfer documents. Specific requirements may vary by local jurisdiction.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How does the online registration process work?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    The process involves digital document submission, blockchain-powered verification, smart contract execution, and final registration. Each step is transparent, secure, and significantly faster than traditional methods.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How long does the registration process take?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    With our blockchain-powered platform, 
+                                    the registration process is significantly streamlined. 
+                                    While traditional methods can take weeks or months,
+                                     our system typically completes registration
+                                      within 3-7 business days.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What happens if there are disputes in ownership?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    Our blockchain system provides a complete, 
+                                    immutable transaction history. In case of disputes, 
+                                    the transparent and verifiable 
+                                    record serves as definitive proof of ownership,
+                                     making resolution more straightforward.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Grid -->
+        <div class="row g-4">
+            <!-- FAQ Card 3 -->
+            <div class="col-md-6">
+                <div class="faq-card">
+                    <h5>Financial Considerations</h5>
+                    <p>Transparent Pricing and Financial Insights</p>
+                    <div class="accordion" id="accordion1">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is blockchain technology in land registry?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Blockchain is a decentralized, digital ledger that records property ownership transactions securely and transparently. Each transaction is cryptographically sealed and cannot be altered, providing an immutable record of property ownership.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How does blockchain transform traditional land registry?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Unlike traditional paper-based systems, blockchain creates a transparent, tamper-proof digital record. It eliminates intermediaries, reduces fraud, and provides instant, verifiable property ownership information.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What makes blockchain more secure than traditional records?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
+                                <div class="accordion-body">
+                                    Unlike centralized systems, blockchain distributes data across multiple nodes, eliminating single points of failure. Cryptographic techniques and consensus mechanisms ensure that no single entity can modify the records without network-wide verification.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Card 4-->
+            <div class="col-md-6">
+                <div class="faq-card">
+                    <h5>Data Privacy and Security</h5>
+                    <p>Protecting Your Personal and Property Information</p>
+                    <div class="accordion" id="accordion2">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What documents are required for property registration?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    Typically, you'll need: proof of identity, property deed, recent tax receipts, land survey documents, proof of address, and any previous ownership transfer documents. Specific requirements may vary by local jurisdiction.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How does the online registration process work?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    The process involves digital document submission, blockchain-powered verification, smart contract execution, and final registration. Each step is transparent, secure, and significantly faster than traditional methods.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How long does the registration process take?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    With our blockchain-powered platform, 
+                                    the registration process is significantly streamlined. 
+                                    While traditional methods can take weeks or months,
+                                     our system typically completes registration
+                                      within 3-7 business days.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What happens if there are disputes in ownership?
+                                    
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    Our blockchain system provides a complete, 
+                                    immutable transaction history. In case of disputes, 
+                                    the transparent and verifiable 
+                                    record serves as definitive proof of ownership,
+                                     making resolution more straightforward.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="text-center mt-4">
+            <button class="btn btn-primary me-2"><i class="bi bi-question-circle"></i> See All FAQs</button>
+            <button class="btn btn-outline-secondary"><i class="bi bi-chat-left-text"></i> Ask Chatbot</button>
+        </div>
+    </div>
 </div>
 
+<div class="feedback-container">
+    <h3 class="feedback-title">Share Your Feedback</h3>
+    <div class="feedback-card">
+        <form>
+            <!-- Name Field -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
 
+            <!-- Email Field -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
 
+            <!-- Message Field -->
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+            <!-- Rating Field -->
+            <div class="mb-3">
+                <legend class="form-label">Rate your experience</legend>
+                <div class="rating-stars">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary submit-button">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-background"></div>
+        <div class="container footer-content">
+            <div class="row">
+                <!-- About Us Section -->
+                <div class="col-md-4 footer-section">
+                    <h6 class="bnku">About Us</h6>
+                    <p>Pioneering digital land registry solutions with cutting-edge technology and unparalleled transparency.</p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-md-4 footer-section">
+                    <h6 class="bnku">Quick Links</h6>
+                    <div class="footer-links">
+                        <a href="#">
+                            <i class="fas fa-map"></i> Home
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-building"></i> Services
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-headset"></i> Contact
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Connect Section -->
+                <div class="col-md-4 footer-section">
+                    <h6 class="bnku">Connect</h6>
+                    <div class="footer-social">
+                        <button aria-label="Explore our open-source projects">
+                            <i class="fab fa-github"></i>
+                        </button>
+                        <button aria-label="Connect with our professional network">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                        <button aria-label="Stay updated with our latest news">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </div>
+                    <p class="footer-copyright">© 2025 Land Registry. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script type="text/javascript">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
 
-<script>
-    let angle = 10;
-    function rotateCarousel() {
-        angle += 120;
-        document.getElementById("carousel").style.transform = `rotateY(${angle}deg)`;
-    }
-</script>
+        <script>
+        let currentRotation = 0;
+
+        function rotateCarousel(direction) {
+            const carousel = document.getElementById('carousel');
+            const cards = carousel.querySelectorAll('.card');
+            const rotationIncrement = 120; // 120 degrees per card
+
+            currentRotation = (currentRotation + direction * rotationIncrement + 360) % 360;
+
+            cards.forEach((card, index) => {
+                const rotation = (currentRotation + index * rotationIncrement) % 360;
+                card.style.transform = `translate(-50%, -50%) rotateY(${rotation}deg) translateZ(250px)`;
+            });
+        }
+
+        // Add click event listeners to feature items
+        document.getElementById('feature1').addEventListener('click', () => rotateCarousel(-1));
+        document.getElementById('feature2').addEventListener('click', () => rotateCarousel(-1));
+        document.getElementById('feature3').addEventListener('click', () => rotateCarousel(1));
+
+        // Add click event listeners to cards
+        document.getElementById('card1').addEventListener('click', () => rotateCarousel(0));
+        document.getElementById('card2').addEventListener('click', () => rotateCarousel(-1));
+        document.getElementById('card3').addEventListener('click', () => rotateCarousel(1));
+    </script>
 </body>
 </html>
