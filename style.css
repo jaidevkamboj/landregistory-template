@@ -125,150 +125,95 @@ body {
 
 
 .hero-section {
-            padding: 96px 0px 64px;
-            background: linear-gradient(135deg, rgba(26, 115, 232, 0.95) 0%, rgba(0, 82, 204, 0.95) 100%);
-            position: relative;
-            overflow: hidden;
-            color: white;
-        }
-        .bubble {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            animation: float 6s ease-in-out infinite;
-        }
-        .bubble-1 {
-            width: 100px;
-            height: 100px;
-            top: 10%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-        .bubble-2 {
-            width: 60px;
-            height: 60px;
-            top: 20%;
-            right: 15%;
-            animation-delay: 2s;
-        }
-        .bubble-3 {
-            width: 80px;
-            height: 80px;
-            bottom: 15%;
-            left: 20%;
-            animation-delay: 4s;
-        }
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-        .hero-title {
-            font-size: 3.75rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 0.35em;
-            animation: fadeInUp 0.8s ease forwards;
-        }
-        .hero-subtitle {
-            font-size: 1.5rem;
-            font-weight: 500;
-            line-height: 1.334;
-            margin-bottom: 32px;
-            opacity: 0.9;
-            animation: fadeInUp 0.8s ease forwards;
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .btn-custom {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            outline: 0px;
-            margin: 0px;
-            cursor: pointer;
-            user-select: none;
-            vertical-align: middle;
-            appearance: none;
-            text-decoration: none;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.75;
-            min-width: 64px;
-            text-transform: none;
-            border-radius: 30px;
-            padding: 12px 32px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            box-shadow: rgba(26, 115, 232, 0.4) 0px 3px 15px 2px;
-            transition: 0.3s ease-in-out;
-            position: relative;
-            overflow: hidden;
-        }
-        .btn-primary-custom {
-            background: rgb(255, 255, 255);
-            color: rgb(26, 115, 232);
-            border: 2px solid rgb(255, 255, 255);
-        }
-        .btn-outline-custom {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-        .btn-custom:hover {
-            transform: translateY(-2px);
-        }
-        .feature-icon {
-            margin-bottom: 16px;
-        }
-        .feature-text {
-            font-size: 1rem;
-            font-weight: 500;
-        }
+    padding: 96px 0px 64px;
+    background: linear-gradient(135deg, rgba(26, 115, 232, 0.95) 0%, rgba(0, 82, 204, 0.95) 100%);
+    position: relative;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
 
-          .feature-smart {
-            display: flex;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding-left: 14px;
-            padding-top: 8px;
-            transition: 0.3s;
-        }
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: float 6s ease-in-out infinite;
+}
+.bubble-1 { width: 80px; height: 80px; top: 10%; left: 10%; animation-delay: 0s; }
+.bubble-2 { width: 50px; height: 50px; top: 20%; right: 15%; animation-delay: 2s; }
+.bubble-3 { width: 70px; height: 70px; bottom: 15%; left: 20%; animation-delay: 4s; }
 
-        .smart-icon{
-           font-size: 1.5rem;
-          color: #fff;
-        }
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
 
-        .feature-card {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding: 8px;
-            transition: 0.3s;
-        }
-        .feature-card:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-        .hero-illustration {
-            width: 100%;
-            max-width: 500px;
-            animation: float 6s ease-in-out infinite;
-        }
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.35em;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease forwards;
+}
+@media (min-width: 768px) {
+    .hero-subtitle { font-size: 1.5rem; }
+}
+
+.btn-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: rgba(26, 115, 232, 0.4) 0px 3px 15px 2px;
+    transition: 0.3s ease-in-out;
+}
+.btn-primary-custom {
+    background: white;
+    color: rgb(26, 115, 232);
+    border: 2px solid white;
+}
+.btn-outline-search {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.btn-custom:hover {
+    transform: translateY(-2px);
+}
+
+.feature-smart {
+    display: flex;
+/*    align-items: center;*/
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 12px;
+    transition: 0.3s;
+}
+.feature-smart:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.smart-icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.hero-illustration {
+    max-width: 450px;
+    width: 100%;
+}
+
 
 .gradient-text {
             background: linear-gradient(45deg, rgb(26, 115, 232) 30%, rgb(52, 168, 83) 90%);
@@ -331,8 +276,8 @@ body {
             transition: 0.3s;
         }
         .btn-outline-custom:hover {
-            background-color: #1a73e8;
-            color: white;
+            
+            color: #1a73e8;
         }
         .feature-icon {
             font-size: 2rem;
@@ -346,7 +291,7 @@ body {
 
 /* Choose Your Role css*/
         .gradient-text {
-            background: linear-gradient(45deg, rgb(25, 118, 210), rgb(33, 203, 243));
+            background: linear-gradient(45deg, rgb(26, 115, 232) 30%, rgb(52, 168, 83) 90%) text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 700;
@@ -371,10 +316,35 @@ body {
             font-size: 1.25rem;
             opacity: 0.6;
             transition: opacity 0.3s;
+            
         }
+        .role-h{
+          color: #1976D2 !important;
+        }
+        .role-hb{
+         color: #34A853;
+        }
+        .role-dob{
+        color: #FF6BC8;
+        }
+    .role-dmo{
+      color: #FF9800;
+    }
+    .role-dmob{
+     color: #9C27B0;
+    }
         .role-card:hover .role-icon {
             opacity: 1;
         }
+
+     .content-section {
+            display: none; /* Hide all content sections by default */
+        }
+        .content-section.active {
+            display: block; /* Show the active content section */
+        }
+
+
         .accordion-button {
             display: flex;
             align-items: center;
@@ -439,57 +409,78 @@ body {
             margin-top: 16px;
         }
 
-/*service css*/
+/* Service Card Styles */
+.service-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 16px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, background 0.3s ease;
+    border: 1px solid transparent; /* Initial transparent border */
+}
 
-        .gradient-bg {
-            background: linear-gradient(45deg, rgb(245, 245, 245) 30%, rgb(255, 255, 255) 90%);
-            padding-top: 48px;
-            padding-bottom: 48px;
-        }
-        .service-card {
-            display: flex;
-            align-items: center;
-            padding: 16px;
-            margin-bottom: 16px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-        .service-icon {
-            font-size: 2rem;
-            color: rgb(95, 99, 104);
-            margin-right: 16px;
-            transition: color 0.3s ease;
-        }
-        .service-card:hover .service-icon .service-title {
-            color: rgb(25, 118, 210);
-        }
-        .service-title {
-            font-size: 1.25rem;
-            font-weight: 500;
-            margin-bottom: 8px;
-            color: rgb(32, 33, 36);
-        }
-        .service-description {
-            font-size: 0.875rem;
-            color: rgb(95, 99, 104);
-            margin-bottom: 0;
-        }
-        .service-arrow {
-            font-size: 2rem;
-            color: rgb(95, 99, 104);
-            margin-left: auto;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-        .service-card:hover .service-arrow {
-            color: rgb(25, 118, 210);
-        }
+/* Service Icon Styles */
+.service-icon {
+    font-size: 2rem;
+    color: rgb(5, 5, 5); /* Black color for icons */
+    margin-right: 16px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: rotate(0deg) scale(1); /* Initial state */
+}
+
+/* Service Title Styles */
+.service-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000; /* Black color for icons */
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Service Description Styles */
+.service-description{
+    font-size: 0.875rem;
+    color: #6c757d; /* Gray color for descriptions */
+    margin-bottom: 0;
+}
+
+/* Service Arrow Styles */
+.service-arrow {
+    font-size: 1.5rem;
+    color: #000; /* Blue color for arrow */
+    margin-left: auto;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.register-pagl {
+color: transparent;
+    text-decoration: none;
+}
+
+/* Hover Effects */
+.service-card:hover {
+    transform: scale(1.05) translateX(5px);
+    box-shadow: var(--bs-box-shadow-lg); /* Bootstrap shadow */
+    border: 1px solid rgba(66, 133, 244, 0.5); /* Light blue border */
+    background: rgba(66, 133, 244, 0.05); /* Light blue background */
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(360deg) scale(1.2); /* Rotate and scale on hover */
+    color: rgb(26, 115, 232); /* Blue color on hover */
+}
+
+.service-card:hover .service-title {
+    color: #1a73e8; /* Green color on hover */
+}
+
+.service-card:hover .service-arrow {
+    color: #1a73e8; /* blue color on hover */
+    transform: translateX(5px); /* Move arrow to the right */
+}
 
 
 
@@ -660,33 +651,28 @@ body {
         .footer-section {
             margin-bottom: 32px;
         }
-
-
-      .bnku {
-    margin: 0px 0px 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.6;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    position: relative;
-}
-
+        .bnku {
+            margin: 0px 0px 16px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            position: relative;
+        }
         .bnku::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 0px;
-    width: 50px;
-    height: 3px;
-    background-color: rgb(52, 168, 83);
-    transition: width 0.3s;
-}
-.bnku:hover::after {
-    width: 100px;
-}
-
-        
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0px;
+            width: 50px;
+            height: 3px;
+            background-color: rgb(52, 168, 83);
+            transition: width 0.3s;
+        }
+        .bnku:hover::after {
+            width: 100px;
+        }
         .footer-section p {
             font-size: 0.875rem;
             opacity: 0.7;
@@ -723,7 +709,7 @@ body {
             transition: opacity 0.3s;
         }
         .footer-social button:hover {
-           color: rgb(65, 195, 99) !important;
+            color: rgb(65, 195, 99) !important;
             opacity: 1;
             text-decoration: none;
         }
@@ -732,3 +718,49 @@ body {
             font-size: 0.875rem;
             opacity: 0.7;
         }
+
+
+   /* Styles for screens smaller than 768px (mobile) */
+@media (max-width: 767px) {
+    .hero-title { 
+        font-size: 2rem; /* Smaller font size for mobile */
+        text-align: center; /* Center text for better readability */
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem; /* Adjust subtitle size */
+        text-align: center;
+    }
+
+    .feature-smart {
+    margin: 0px 0;
+    text-align: center;
+    display: block;
+    margin: 5px;
+  }
+
+    .smart-icon {
+        font-size: 2rem; /* Slightly smaller icons for mobile */
+    }
+
+    .hero-illustration {
+        max-width: 80%; /* Reduce image size for smaller screens */
+        display: block;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn-custom {
+        width: 100%; /* Full-width buttons for easy tap */
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+
+}

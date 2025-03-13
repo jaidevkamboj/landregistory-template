@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workflow Toggle</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+      <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    
 </head>
 <body>
     <div id="root">
@@ -37,11 +40,11 @@
             <div class="bubble" style="left: 95.4853%; top: 21.6678%; width: 31.5046px; height: 87.6403px; animation-delay: 8.59344s;"></div>
             <div class="bubble" style="left: 11.911%; top: 96.4872%; width: 66.3508px; height: 42.3157px; animation-delay: 2.45741s;"></div>
         </div>
-    </div>
+    
 
 <header class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="index.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 7V3H2v18h20V7zM6 19H4v-2h2zm0-4H4v-2h2zm0-4H4V9h2zm0-4H4V5h2zm4 12H8v-2h2zm0-4H8v-2h2zm0-4H8V9h2zm0-4H8V5h2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8zm-2-8h-2v2h2zm0 4h-2v2h2z"></path>
                 </svg>
@@ -53,7 +56,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav-button" href="/">
+                        <a class="nav-link nav-button" href="file:///C:/Users/LENOVO/Downloads/Registry/index.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
                             </svg>
@@ -61,7 +64,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-button" href="/register">
+                        <a class="nav-link nav-button" href="pages/register-land.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M4 10h3v7H4zm6.5 0h3v7h-3zM2 19h20v3H2zm15-9h3v7h-3zm-5-9L2 6v2h20V6z"></path>
                             </svg>
@@ -69,7 +72,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-button" href="/transfer">
+                        <a class="nav-link nav-button" href="pages/transfer-land.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M6.99 11 3 15l3.99 4v-3H14v-2H6.99zM21 9l-3.99-4v3H10v2h7.01v3z"></path>
                             </svg>
@@ -77,7 +80,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-button" href="/records">
+                        <a class="nav-link nav-button" href="pages/view-land.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"></path>
                             </svg>
@@ -88,51 +91,59 @@
             </div>
         </div>
     </header>
-
-    <section class="hero-section">
-        <div class="container">
-            <div class="bubble bubble-1"></div>
-            <div class="bubble bubble-2"></div>
-            <div class="bubble bubble-3"></div>
-            <div class="row">
-                <div class="col-md-7">
-                    <h1 class="hero-title">Revolutionizing Land Registry</h1>
-                    <p class="hero-subtitle">Secure, transparent, and efficient property transactions powered by blockchain technology. Experience the future of real estate management.</p>
-                    <div class="d-flex gap-3">
-                        <button class="btn btn-custom btn-primary-custom">
-                            <i class="fas fa-plus me-2"></i>Register Property
-                        </button>
-                        <button class="btn btn-custom btn-search-custom">
-                            <i class="fas fa-search me-2"></i>Search Properties
-                        </button>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-md-4">
-                            <div class="feature-smart">
-                                <i class="fas fa-shield-alt smart-icon fa-3x"></i>
-                                <p class="smart-text">Blockchain Secured</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature-smart">
-                                <i class="fas fa-bolt smart-icon fa-3x"></i>
-                                <p class="smart-text">Instant Verification</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="feature-smart">
-                                <i class="fas fa-file-contract smart-icon fa-3x"></i>
-                                <p class="smart-text">Smart Contracts</p>
-                            </div>
-                        </div>
-                    </div>
+ 
+ <!-- Revolutionizing Land Registry -->
+   <section class="hero-section">
+    <div class="container">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="row align-items-center">
+            <!-- Left Side: Text Content -->
+            <div class="col-lg-7 col-md-6 col-12 text-center text-md-start">
+                <h1 class="hero-title">Revolutionizing Land Registry</h1>
+                <p class="hero-subtitle">
+                    Secure, transparent, and efficient property transactions powered by blockchain technology.
+                </p>
+                <!-- Buttons (Stacked on mobile, inline on desktop) -->
+                <div class="d-flex flex-column flex-md-row gap-3 justify-content-center justify-content-md-start">
+                    <button class="btn btn-custom btn-primary-custom">
+                        <i class="fas fa-plus me-2"></i>Register Property
+                    </button>
+                    <button class="btn btn-custom btn-outline-search">
+                        <i class="fas fa-search me-2"></i>Search Properties
+                    </button>
                 </div>
-                <div class="col-md-5">
-                    <img src="img/hero-illustration.svg" alt="Land Registry Illustration" class="hero-illustration">
+                <!-- Features Section -->
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-4">
+                        <div class="feature-smart">
+                            <i class="fas fa-shield-alt smart-icon fa-2x"></i>
+                            <p class="smart-text">Blockchain Secured</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="feature-smart">
+                            <i class="fas fa-bolt smart-icon fa-2x"></i>
+                            <p class="smart-text">Instant Verification</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="feature-smart">
+                            <i class="fas fa-file-contract smart-icon fa-2x"></i>
+                            <p class="smart-text">Smart Contracts</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- Right Side: Image -->
+            <div class="col-lg-5 col-md-6 col-12 text-center mt-4 mt-md-0">
+                <img src="img/hero-illustration.svg" alt="Land Registry Illustration" class="hero-illustration img-fluid">
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <div class="container my-5">
         <h3 class="gradient-text display-4 mb-4">Cutting-Edge Technologies Powering Land Registry</h3>
@@ -209,82 +220,87 @@
             </div>
         </div>
     </div>
-<!-- Choose Your Role -->
 
+
+
+<!-- Section Choose Your Role Land Owner-->
 <div class="container my-5">
-        <h3 class="text-center display-4 fw-bold gradient-text mb-4">Choose Your Role</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <span class="text-uppercase text-muted small">ROLES</span>
-                        <div class="role-card active">
-                            <i class="fas fa-home role-icon"></i>
-                            <p class="role-name">Land Owner</p>
-                        </div>
-                        <div class="role-card">
-                            <i class="fas fa-building role-icon"></i>
-                            <p class="role-name">Government Regulator</p>
-                        </div>
-                        <div class="role-card">
-                            <i class="fas fa-dollar-sign role-icon"></i>
-                            <p class="role-name">Real Estate Investor</p>
-                        </div>
-                        <div class="role-card">
-                            <i class="fas fa-map role-icon"></i>
-                            <p class="role-name">Land Surveyor</p>
-                        </div>
-                        <div class="role-card">
-                            <i class="fas fa-briefcase role-icon"></i>
-                            <p class="role-name">Real Estate Agent</p>
-                        </div>
+    <h3 class="text-center display-4 fw-bold gradient-text mb-4">Choose Your Role</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <span class="text-uppercase text-muted small">ROLES</span>
+                    <!-- Role Cards -->
+                    <div class="role-card active" data-target="land-owner">
+                        <i class="fas fa-home role-iconc role-h"></i>
+                        <p class="role-name">Land Owner</p>
+                    </div>
+                    <div class="role-card" data-target="government-regulator">
+                        <i class="fas fa-building role-icon role-hb"></i>
+                        <p class="role-name">Government Regulator</p>
+                    </div>
+                    <div class="role-card" data-target="real-estate-investor">
+                        <i class="fas fa-dollar-sign role-icon role-dob"></i>
+                        <p class="role-name">Real Estate Investor</p>
+                    </div>
+                    <div class="role-card" data-target="land-surveyor">
+                        <i class="fas fa-map role-icon role-dmo"></i>
+                        <p class="role-name">Land Surveyor</p>
+                    </div>
+                    <div class="role-card" data-target="real-estate-agent">
+                        <i class="fas fa-briefcase role-icon role-dmob"></i>
+                        <p class="role-name">Real Estate Agent</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="card h-100">
-                    <div class="card-body">
+        </div>
+        <div class="col-md-8">
+            <div class="card h-100">
+                <div class="card-body">
+                    <!-- Content Sections -->
+                    <div id="land-owner" class="content-section active">
                         <div class="d-flex align-items-center mb-4">
-                            <i class="fas fa-home me-3 fs-4"></i>
+                            <i class="fas fa-home me-3 fs-4 role-h"></i>
                             <h4 class="mb-0">Land Owner</h4>
                         </div>
                         <p class="text-muted mb-4">As a land owner, you have complete control over your property records, ensuring transparency and security through blockchain technology.</p>
                         <div class="row mb-4">
                             <div class="col-md-6">
                                 <h6 class="d-flex align-items-center mb-3">
-                                    <i class="fas fa-shield-alt me-2"></i>Permissions
+                                    <i class="fas fa-shield-alt me-2 role-h"></i>Permissions
                                 </h6>
                                 <div class="d-flex flex-wrap">
-                                    <span class="chip">Property Registration</span>
-                                    <span class="chip">Ownership Verification</span>
-                                    <span class="chip">Secure Transfer Mechanism</span>
-                                    <span class="chip">Transparent Ownership Records</span>
+                                    <span class="chip role-h">Property Registration</span>
+                                    <span class="chip role-h">Ownership Verification</span>
+                                    <span class="chip role-h">Secure Transfer Mechanism</span>
+                                    <span class="chip role-h">Transparent Ownership Records</span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <h6 class="d-flex align-items-center mb-3">
-                                    <i class="fas fa-project-diagram me-2"></i>Workflow
+                                    <i class="fas fa-project-diagram me-2 role-h"></i>Workflow
                                 </h6>
                                 <div class="accordion" id="workflowAccordion">
                                     <!-- Register Property -->
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingOne">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                <i class="fas fa-file-alt me-2"></i>Register Property
+                                                <i class="fas fa-file-alt me-2 role-h"></i>Register Property
                                             </button>
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#workflowAccordion">
                                             <div class="accordion-body">
                                                 <p class="small text-muted">Register your property on the blockchain.</p>
                                                 <div class="d-flex align-items-center mb-2">
-                                                    <i class="fas fa-user me-2"></i>
+                                                    <i class="fas fa-user me-2 role-h"></i>
                                                     <div>
                                                         <p class="small mb-0">What is the first step in registering a property?</p>
                                                         <p class="small text-muted">The first step is to create a digital identity and connect your wallet.</p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex align-items-center">
-                                                    <i class="fas fa-check-circle me-2"></i>
+                                                    <i class="fas fa-check-circle me-2 role-h"></i>
                                                     <div>
                                                         <p class="small mb-0">How do I create a digital identity?</p>
                                                         <p class="small text-muted">You can create a digital identity by providing your personal details and verifying your identity through our platform.</p>
@@ -297,14 +313,14 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingTwo">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                <i class="fas fa-check-circle me-2"></i>Verify Ownership
+                                                <i class="fas fa-check-circle me-2 role-h"></i>Verify Ownership
                                             </button>
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#workflowAccordion">
                                             <div class="accordion-body">
                                                 <p class="small text-muted">Verify your ownership of the property.</p>
                                                 <div class="d-flex align-items-center mb-2">
-                                                    <i class="fas fa-gavel me-2"></i>
+                                                    <i class="fas fa-gavel me-2 role-h"></i>
                                                     <div>
                                                         <p class="small mb-0">How do I verify my ownership of the property?</p>
                                                         <p class="small text-muted">You can verify your ownership by providing proof of ownership documents and undergoing a verification process.</p>
@@ -324,14 +340,14 @@
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingThree">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                <i class="fas fa-exchange-alt me-2"></i>Transfer Ownership
+                                                <i class="fas fa-exchange-alt me-2 role-h"></i>Transfer Ownership
                                             </button>
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#workflowAccordion">
                                             <div class="accordion-body">
                                                 <p class="small text-muted">Transfer ownership of the property.</p>
                                                 <div class="d-flex align-items-center mb-2">
-                                                    <i class="fas fa-arrow-right me-2"></i>
+                                                    <i class="fas fa-arrow-right me-2 role-h"></i>
                                                     <div>
                                                         <p class="small mb-0">How do I transfer ownership of the property?</p>
                                                         <p class="small text-muted">You can transfer ownership by creating a new transaction and verifying the transfer.</p>
@@ -340,28 +356,507 @@
                                                 <div class="d-flex align-items-center">
                                                     <i class="fas fa-check-circle me-2"></i>
                                                     <div>
-<p class="small mb-0">What is the verification process?</p>
-<p class="small text-muted">The verification process involves confirming the transfer details and verifying the new owner's identity.</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <h6 class="d-flex align-items-center mb-3">
-        <i class="fas fa-shield-alt me-2"></i>Responsibilities
-        </h6>
-        <p class="text-muted mb-4">As a Land Owner, you play a crucial role in the blockchain land registry ecosystem. Your actions are recorded transparently on the blockchain, ensuring security, trust, and immutability of land-related transactions.</p>
-        <button class="btn btn-primary w-100">Select Land Owner Role</button>
-        </div>
-        </div>
-        </div>
-        </div>
-    </div>
+                                                        <p class="small mb-0">What is the verification process?</p>
+                                                        <p class="small text-muted">The verification process involves confirming the transfer details and verifying the new owner's identity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt me-2 role-h"></i>Responsibilities
+                        </h6>
+                        <p class="text-muted mb-4">As a Land Owner, 
+                        you play a crucial role in the blockchain land
+                        registry ecosystem. Your actions are recorded 
+                        transparently on the blockchain, ensuring security, 
+                         trust, and immutability of land-related transactions.</p>
+                        <button class="btn btn-primary w-100">Select Land Owner Role</button>
+                    </div>
 
-    <!-- The transparent and immutable -->
+                    <div id="government-regulator" class="content-section">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-building me-3 fs-4 role-hb"></i>
+                            <h4 class="mb-0">Government Regulator</h4>
+                        </div>
+                        <p class="text-muted mb-4">As a government regulator, you oversee land transactions and ensure compliance with regulations.</p>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-shield-alt me-2 role-hb"></i>Permissions
+                                </h6>
+                                <div class="d-flex flex-wrap">
+                                    <span class="chip role-hb">Property Registration</span>
+                                    <span class="chip role-hb">Ownership Verification</span>
+                                    <span class="chip role-hb">Secure Transfer Mechanism</span>
+                                    <span class="chip role-hb">Transparent Ownership Records</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-project-diagram me-2 role-hb"></i>Workflow
+                                </h6>
+                                <div class="accordion" id="workflowAccordion">
+                                    <!-- Register Property -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <i class="fas fa-file-alt me-2 role-hb"></i>Register Property
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Register your property on the blockchain.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-user me-2 role-hb"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the first step in registering a property?</p>
+                                                        <p class="small text-muted">The first step is to create a digital identity and connect your wallet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I create a digital identity?</p>
+                                                        <p class="small text-muted">You can create a digital identity by providing your personal details and verifying your identity through our platform.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Verify Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="fas fa-check-circle me-2 role-hb"></i>Verify Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Verify your ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-gavel me-2 role-hb"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I verify my ownership of the property?</p>
+                                                        <p class="small text-muted">You can verify your ownership by providing proof of ownership documents and undergoing a verification process.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-file-alt me-2 role-hb"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What documents do I need to provide?</p>
+                                                        <p class="small text-muted">You will need to provide proof of ownership documents such as a deed or title.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Transfer Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="fas fa-exchange-alt me-2 role-hb"></i>Transfer Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Transfer ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-arrow-right me-2 role-hb"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I transfer ownership of the property?</p>
+                                                        <p class="small text-muted">You can transfer ownership by creating a new transaction and verifying the transfer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2 role-hb"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the verification process?</p>
+                                                        <p class="small text-muted">The verification process involves confirming the transfer details and verifying the new owner's identity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       <h6 class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt me-2 role-hb"></i>Responsibilities
+                        </h6>
+                        <p class="text-muted mb-4">As a Land Owner, 
+                        you play a crucial role in the blockchain land
+                        registry ecosystem. Your actions are recorded 
+                        transparently on the blockchain, ensuring security, 
+                         trust, and immutability of land-related transactions.</p>
+                        <button class="btn btn-primary w-100">Select Government Regulator Role</button>
+                    </div>
+
+                    <div id="real-estate-investor" class="content-section">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-dollar-sign me-3 fs-4 role-dob"></i>
+                            <h4 class="mb-0">Real Estate Investor</h4>
+                        </div>
+                        
+                        <p class="text-muted mb-4">As a real estate investor, you can explore and invest in properties securely using blockchain technology.</p>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-shield-alt me-2 role-dob"></i>Permissions
+                                </h6>
+                                <div class="d-flex flex-wrap">
+                                    <span class="chip role-dob">Property Registration</span>
+                                    <span class="chip role-dob">Ownership Verification</span>
+                                    <span class="chip role-dob">Secure Transfer Mechanism</span>
+                                    <span class="chip role-dob">Transparent Ownership Records</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-project-diagram me-2 role-dob"></i>Workflow
+                                </h6>
+                                <div class="accordion" id="workflowAccordion">
+                                    <!-- Register Property -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <i class="fas fa-file-alt me-2 role-dob"></i>Register Property
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Register your property on the blockchain.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-user me-2 role-dob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the first step in registering a property?</p>
+                                                        <p class="small text-muted">The first step is to create a digital identity and connect your wallet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2 role-dob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I create a digital identity?</p>
+                                                        <p class="small text-muted">You can create a digital identity by providing your personal details and verifying your identity through our platform.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Verify Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="fas fa-check-circle me-2 role-dob"></i>Verify Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Verify your ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-gavel me-2 role-dob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I verify my ownership of the property?</p>
+                                                        <p class="small text-muted">You can verify your ownership by providing proof of ownership documents and undergoing a verification process.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-file-alt me-2 role-dob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What documents do I need to provide?</p>
+                                                        <p class="small text-muted">You will need to provide proof of ownership documents such as a deed or title.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Transfer Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="fas fa-exchange-alt me-2 role-dob"></i>Transfer Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Transfer ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-arrow-right me-2 role-dob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I transfer ownership of the property?</p>
+                                                        <p class="small text-muted">You can transfer ownership by creating a new transaction and verifying the transfer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the verification process?</p>
+                                                        <p class="small text-muted">The verification process involves confirming the transfer details and verifying the new owner's identity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt me-2 role-dob"></i>Responsibilities
+                        </h6>
+                        <p class="text-muted mb-4">As a Land Owner, 
+                        you play a crucial role in the blockchain land
+                        registry ecosystem. Your actions are recorded 
+                        transparently on the blockchain, ensuring security, 
+                         trust, and immutability of land-related transactions.</p>
+                        <button class="btn btn-primary w-100">Select Real Estate Investor Role</button>
+                    </div>
+
+                    <div id="land-surveyor" class="content-section">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-map me-3 fs-4 role-dmo"></i>
+                            <h4 class="mb-0">Land Surveyor</h4>
+                        </div>
+                        <p class="text-muted mb-4">As a land surveyor, you provide accurate land measurements and data for property registration.</p>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-shield-alt me-2 role-dmo"></i>Permissions
+                                </h6>
+                                <div class="d-flex flex-wrap">
+                                    <span class="chip role-dmo">Property Registration</span>
+                                    <span class="chip role-dmo">Ownership Verification</span>
+                                    <span class="chip role-dmo">Secure Transfer Mechanism</span>
+                                    <span class="chip role-dmo">Transparent Ownership Records</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-project-diagram me-2 role-dmo"></i>Workflow
+                                </h6>
+                                <div class="accordion" id="workflowAccordion">
+                                    <!-- Register Property -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <i class="fas fa-file-alt me-2 role-dmo"></i>Register Property
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Register your property on the blockchain.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-user me-2 role-dmo"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the first step in registering a property?</p>
+                                                        <p class="small text-muted">The first step is to create a digital identity and connect your wallet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I create a digital identity?</p>
+                                                        <p class="small text-muted">You can create a digital identity by providing your personal details and verifying your identity through our platform.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Verify Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="fas fa-check-circle me-2 role-dmo"></i>Verify Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Verify your ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-gavel me-2 role-dmo"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I verify my ownership of the property?</p>
+                                                        <p class="small text-muted">You can verify your ownership by providing proof of ownership documents and undergoing a verification process.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-file-alt me-2 role-dmo"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What documents do I need to provide?</p>
+                                                        <p class="small text-muted">You will need to provide proof of ownership documents such as a deed or title.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Transfer Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="fas fa-exchange-alt me-2 role-dmo"></i>Transfer Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Transfer ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-arrow-right me-2 role-dmo"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I transfer ownership of the property?</p>
+                                                        <p class="small text-muted">You can transfer ownership by creating a new transaction and verifying the transfer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2 role-dmo"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the verification process?</p>
+                                                        <p class="small text-muted">The verification process involves confirming the transfer details and verifying the new owner's identity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt me-2 role-dmo"></i>Responsibilities
+                        </h6>
+                        <p class="text-muted mb-4">As a Land Owner, 
+                        you play a crucial role in the blockchain land
+                        registry ecosystem. Your actions are recorded 
+                        transparently on the blockchain, ensuring security, 
+                         trust, and immutability of land-related transactions.</p>
+                        <button class="btn btn-primary w-100">Select Land Surveyor Role</button>
+                    </div>
+
+                    <div id="real-estate-agent" class="content-section">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-briefcase me-3 fs-4 role-dmob"></i>
+                            <h4 class="mb-0">Real Estate Agent</h4>
+                        </div>
+                        <p class="text-muted mb-4">As a real estate agent, you facilitate property transactions and connect buyers with sellers.</p>
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-shield-alt me-2 role-dmob"></i>Permissions
+                                </h6>
+                                <div class="d-flex flex-wrap">
+                                    <span class="chip role-dmob">Property Registration</span>
+                                    <span class="chip role-dmob">Ownership Verification</span>
+                                    <span class="chip role-dmob">Secure Transfer Mechanism</span>
+                                    <span class="chip role-dmob">Transparent Ownership Records</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-project-diagram me-2 role-dmob"></i>Workflow
+                                </h6>
+                                <div class="accordion" id="workflowAccordion">
+                                    <!-- Register Property -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <i class="fas fa-file-alt me-2 role-dmob"></i>Register Property
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Register your property on the blockchain.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-user me-2 role-dmob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the first step in registering a property?</p>
+                                                        <p class="small text-muted">The first step is to create a digital identity and connect your wallet.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2 role-dmob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I create a digital identity?</p>
+                                                        <p class="small text-muted">You can create a digital identity by providing your personal details and verifying your identity through our platform.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Verify Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="fas fa-check-circle me-2 role-dmob"></i>Verify Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Verify your ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-gavel me-2 role-dmob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I verify my ownership of the property?</p>
+                                                        <p class="small text-muted">You can verify your ownership by providing proof of ownership documents and undergoing a verification process.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-file-alt me-2 role-dmob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What documents do I need to provide?</p>
+                                                        <p class="small text-muted">You will need to provide proof of ownership documents such as a deed or title.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Transfer Ownership -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="fas fa-exchange-alt me-2 role-dmob"></i>Transfer Ownership
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#workflowAccordion">
+                                            <div class="accordion-body">
+                                                <p class="small text-muted">Transfer ownership of the property.</p>
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <i class="fas fa-arrow-right me-2 role-dmob"></i>
+                                                    <div>
+                                                        <p class="small mb-0">How do I transfer ownership of the property?</p>
+                                                        <p class="small text-muted">You can transfer ownership by creating a new transaction and verifying the transfer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fas fa-check-circle me-2"></i>
+                                                    <div>
+                                                        <p class="small mb-0">What is the verification process?</p>
+                                                        <p class="small text-muted">The verification process involves confirming the transfer details and verifying the new owner's identity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt me-2 role-dmob"></i>Responsibilities
+                        </h6>
+                        <p class="text-muted mb-4">As a Land Owner, 
+                        you play a crucial role in the blockchain land
+                        registry ecosystem. Your actions are recorded 
+                        transparently on the blockchain, ensuring security, 
+                         trust, and immutability of land-related transactions.</p>
+                        <button class="btn btn-primary w-100">Select Real Estate Agent Role</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Trusted by Industry Professionals -->
     <div class="container py-5">
         <div class="container py-4">
             <h3 class="text-center display-4 fw-bold gradient-text mb-5">Trusted by Industry Professionals</h3>
@@ -401,47 +896,53 @@
     </div>
 <!-- Our Services -->
 <div class="gradient-bg">
-        <div class="container">
-            <h3 class="text-center display-4 fw-semibold mb-5">Our Services</h3>
-            <div class="row g-4">
-                <!-- Register Land Service -->
-                <div class="col-12">
-                    <div class="service-card">
-                        <i class="fas fa-plus service-icon"></i>
-                        <div class="flex-grow-1">
-                            <h6 class="service-title">Register Land</h6>
-                            <p class="service-description">Securely register your land property on the blockchain with immutable records and instant verification.</p>
-                        </div>
-                        <i class="fas fa-arrow-right service-arrow"></i>
+    <div class="container">
+        <h3 class="text-center display-4 fw-semibold mb-5 servic-texe">Our Services</h3>
+        <div class="row g-4">
+            <!-- Register Land Service -->
+            <div class="col-12">
+                <a class="register-pagl" href="pages/register-land.html">
+                <div class="service-card">
+                    <i class="fas fa-plus service-icon"></i>
+                    <div class="flex-grow-1">
+                        <h6 class="service-title">Register Land</h6>
+                        <p class="service-description">Securely register your land property on the blockchain with immutable records and instant verification.</p>
                     </div>
+                    <i class="fas fa-arrow-right service-arrow"></i>
                 </div>
+                </a>
+            </div>
 
-                <!-- Transfer Ownership Service -->
-                <div class="col-12">
-                    <div class="service-card">
-                        <i class="fas fa-exchange-alt service-icon"></i>
-                        <div class="flex-grow-1">
-                            <h6 class="service-title">Transfer Ownership</h6>
-                            <p class="service-description">Transfer land ownership seamlessly using smart contracts with complete transparency and security.</p>
-                        </div>
-                        <i class="fas fa-arrow-right service-arrow"></i>
+            <!-- Transfer Ownership Service -->
+            <div class="col-12">
+                <a class="register-pagl" href="pages/transfer-land.html">
+                <div class="service-card">
+                    <i class="fas fa-exchange-alt service-icon"></i>
+                    <div class="flex-grow-1">
+                        <h6 class="service-title">Transfer Ownership</h6>
+                        <p class="service-description">Transfer land ownership seamlessly using smart contracts with complete transparency and security.</p>
                     </div>
+                    <i class="fas fa-arrow-right service-arrow"></i>
                 </div>
+            </a>
+            </div>
 
-                <!-- View Records Service -->
-                <div class="col-12">
-                    <div class="service-card">
-                        <i class="fas fa-search service-icon"></i>
-                        <div class="flex-grow-1">
-                            <h6 class="service-title">View Records</h6>
-                            <p class="service-description">Access and verify land records instantly with our blockchain-powered transparent ledger system.</p>
-                        </div>
-                        <i class="fas fa-arrow-right service-arrow"></i>
+            <!-- View Records Service -->
+            <div class="col-12">
+                <a class="register-pagl" href="pages/View-land.html">
+                <div class="service-card">
+                    <i class="fas fa-search service-icon"></i>
+                    <div class="flex-grow-1">
+                        <h6 class="service-title">View Records</h6>
+                        <p class="service-description">Access and verify land records instantly with our blockchain-powered transparent ledger system.</p>
                     </div>
+                    <i class="fas fa-arrow-right service-arrow"></i>
                 </div>
+            </a>
             </div>
         </div>
     </div>
+</div>
 
 <!-- Frequently Asked Questions -->
 <div class="dqpbi8">
@@ -759,20 +1260,21 @@
         </form>
     </div>
 </div>
-    
-    <!-- footer -->
+    </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-background"></div>
         <div class="container footer-content">
-            <div class="row">
+            <div class="row g-4">
                 <!-- About Us Section -->
-                <div class="col-md-4 footer-section">
+                <div class="col-md-4 col-sm-6 footer-section">
                     <h6 class="bnku">About Us</h6>
                     <p>Pioneering digital land registry solutions with cutting-edge technology and unparalleled transparency.</p>
                 </div>
 
                 <!-- Quick Links Section -->
-                <div class="col-md-4 footer-section">
+                <div class="col-md-4 col-sm-6 footer-section">
                     <h6 class="bnku">Quick Links</h6>
                     <div class="footer-links">
                         <a href="#">
@@ -788,7 +1290,7 @@
                 </div>
 
                 <!-- Connect Section -->
-                <div class="col-md-4 footer-section">
+                <div class="col-md-4 col-sm-12 footer-section">
                     <h6 class="bnku">Connect</h6>
                     <div class="footer-social">
                         <button aria-label="Explore our open-source projects">
@@ -805,38 +1307,9 @@
                 </div>
             </div>
         </div>
-    </footer>
+    
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
-
-        <script>
-        let currentRotation = 0;
-
-        function rotateCarousel(direction) {
-            const carousel = document.getElementById('carousel');
-            const cards = carousel.querySelectorAll('.card');
-            const rotationIncrement = 120; // 120 degrees per card
-
-            currentRotation = (currentRotation + direction * rotationIncrement + 360) % 360;
-
-            cards.forEach((card, index) => {
-                const rotation = (currentRotation + index * rotationIncrement) % 360;
-                card.style.transform = `translate(-50%, -50%) rotateY(${rotation}deg) translateZ(250px)`;
-            });
-        }
-
-        // Add click event listeners to feature items
-        document.getElementById('feature1').addEventListener('click', () => rotateCarousel(-1));
-        document.getElementById('feature2').addEventListener('click', () => rotateCarousel(-1));
-        document.getElementById('feature3').addEventListener('click', () => rotateCarousel(1));
-
-        // Add click event listeners to cards
-        document.getElementById('card1').addEventListener('click', () => rotateCarousel(0));
-        document.getElementById('card2').addEventListener('click', () => rotateCarousel(-1));
-        document.getElementById('card3').addEventListener('click', () => rotateCarousel(1));
-    </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
 </body>
 </html>

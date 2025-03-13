@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Land Property</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        .custom-container {
+            width: 100%;
+            margin: 32px auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .custom-card {
+            background-color: #fff;
+            color: #202124;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            padding: 32px;
+        }
+        .custom-title {
+            font-weight: 600;
+            font-size: 2.125rem;
+            line-height: 1.235;
+            text-align: center;
+            margin-bottom: 0.35em;
+        }
+        .custom-form {
+            margin-top: 24px;
+        }
+        .custom-form-group {
+            margin-bottom: 24px;
+        }
+        .custom-form-control {
+            width: 100%;
+            padding: 16.5px 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.23);
+        }
+        .custom-form-control:focus {
+            border-color: #80bdff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        .custom-file-upload {
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        .custom-button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+     <header class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 7V3H2v18h20V7zM6 19H4v-2h2zm0-4H4v-2h2zm0-4H4V9h2zm0-4H4V5h2zm4 12H8v-2h2zm0-4H8v-2h2zm0-4H8V9h2zm0-4H8V5h2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8zm-2-8h-2v2h2zm0 4h-2v2h2z"></path>
+                </svg>
+                <h5 class="mb-0 registry-text">Land Registry</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-button" href="../index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-button" href="register-land.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M4 10h3v7H4zm6.5 0h3v7h-3zM2 19h20v3H2zm15-9h3v7h-3zm-5-9L2 6v2h20V6z"></path>
+                            </svg>
+                            Register Land
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-button" href="transfer-land.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.99 11 3 15l3.99 4v-3H14v-2H6.99zM21 9l-3.99-4v3H10v2h7.01v3z"></path>
+                            </svg>
+                            Transfer Land
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-button" href="pages/view-land.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8zm2 16H8v-2h8zm0-4H8v-2h8zm-3-5V3.5L18.5 9z"></path>
+                            </svg>
+                            View Records
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container custom-container">
+        <div class="card custom-card">
+            <h1 class="custom-title">Register Land Property</h1>
+            <form class="custom-form">
+                <div class="row">
+                    <div class="col-12 col-sm-6 custom-form-group">
+                        <label for="propertyId" class="form-label">Property ID <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control custom-form-control" id="propertyId" name="propertyId" required>
+                    </div>
+                    <div class="col-12 col-sm-6 custom-form-group">
+                        <label for="surveyNumber" class="form-label">Survey Number <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control custom-form-control" id="surveyNumber" name="surveyNumber" required>
+                    </div>
+                    <div class="col-12 custom-form-group">
+                        <label for="location" class="form-label">Property Location <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control custom-form-control" id="location" name="location" required>
+                    </div>
+                    <div class="col-12 col-sm-6 custom-form-group">
+                        <label for="area" class="form-label">Area (in sq. ft.) <span class="text-danger">*</span></label>
+                        <input type="number" class="form-control custom-form-control" id="area" name="area" required>
+                    </div>
+                    <div class="col-12 col-sm-6 custom-form-group">
+                        <label for="price" class="form-label">Price (in ETH) <span class="text-danger">*</span></label>
+                        <input type="number" class="form-control custom-form-control" id="price" name="price" required>
+                    </div>
+                    <div class="col-12 custom-form-group">
+                        <label for="documents-file" class="btn btn-primary custom-file-upload">Upload Property Documents</label>
+                        <input type="file" id="documents-file" accept="application/pdf" style="display: none;">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary custom-button btn-lg">Register Property</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-background"></div>
+        <div class="container footer-content">
+            <div class="row">
+                <!-- About Us Section -->
+                <div class="col-md-4 footer-section">
+                    <h6 class="bnku">About Us</h6>
+                    <p>Pioneering digital land registry solutions with cutting-edge technology and unparalleled transparency.</p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-md-4 footer-section">
+                    <h6 class="bnku">Quick Links</h6>
+                    <div class="footer-links">
+                        <a href="#">
+                            <i class="fas fa-map"></i> Home
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-building"></i> Services
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-headset"></i> Contact
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Connect Section -->
+                <div class="col-md-4 footer-section">
+                    <h6 class="bnku">Connect</h6>
+                    <div class="footer-social">
+                        <button aria-label="Explore our open-source projects">
+                            <i class="fab fa-github"></i>
+                        </button>
+                        <button aria-label="Connect with our professional network">
+                            <i class="fab fa-linkedin"></i>
+                        </button>
+                        <button aria-label="Stay updated with our latest news">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </div>
+                    <p class="footer-copyright">© 2025 Land Registry. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
